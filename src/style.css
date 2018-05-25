@@ -1,1 +1,45 @@
-/* Acá va tu código */
+body { background-image: url("img/fondo.png") }
+
+#rigth {
+    text-align: center;
+
+};
+¡
+
+#Buttons {
+    position: absolute;
+    display:inline-block
+    
+}
+textarea {
+    width: 400px;
+    height: 100px;
+    margin: 10px 0 10px 0;
+    box-shadow: 6px 6px 0px black;
+    
+    
+}
+h2 {   
+    font-size:4.7em;font-weight: normal;
+    text-align: center;
+    color:#DF0101;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 5px 5px 5px #1C1C1C;
+ 
+}
+
+ h3 {
+    text-align: center;
+}
+div {
+    padding: 20px;
+}
+input {
+    padding: 4px;
+    margin: 10px 0 10px 0;
+}
+#chains {
+    width: 400px;
+    height: 100px;
+    margin: 10px 0 10px 0;
+}

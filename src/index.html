@@ -4,11 +4,41 @@
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+      </style>
 </head>
 <body>
 
-  <div id="root"></div>
+  <div>
+         <h2>Cifrado Cesar</h2>
+    <h3>Cifra y Descifra tu mensaje!!!</h3>
+    
 
+  <div id="rigth">
+    <label>Ingresa tu Mensaje</label><br>
+    <textarea  id= "text" placeholder="Introduce aquí el texto a descifrar"></textarea><br>
+    <input type="number" id="key" min="0" max="100" value="0">
+    <label>Desplazamiento</label>
+    <input class="button" type="submit" onclick="(encode)" value="Cipher">
+    <input class="button" type="submit" onclick="(decode)" value="Dechiper"><br>
+    <label>Tu mensaje dice:</label><br>
+		<textarea id="chains" readonly></textarea>
+		</div>
+		
+    </div>
+  
+
+
+    
+
+    
+  </div>
+
+
+  
+	
+		
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>

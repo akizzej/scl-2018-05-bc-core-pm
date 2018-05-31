@@ -1,42 +1,45 @@
-window.cipher = {
 
-  encode: (textoUsuario , offsetUsuario) => {
-   let textoCifrado= "";
-   let offset = 0;
+let textoUsuario = "";
+let offset = 0 ;
+
+let textoCifrado ="";
+
 
 
 //se hace un for para recorrer el texto ingresado x el user
+function encode() {
+    textoUsuario = document.getElementById("text").value;
+    offsetUser = document.getElementById("OffSet").value; 
+    textoCifrado = document.getElementById("textoCifrado").innerHTML = textoCifrado;
 
+    for (i = 0; i <= textoUsuario.length; i++){
+let mensaje = textoUsuario.toUpperCase().charCodeAt(i);
+let codigoCesarCipher = (mensaje- 65+ offset ) %26 + 65;
+let caracterCipher = String.fromCharCode(codigoCesarCipher);
 
-for (i = 0; i < textoUsuario.length; i++){
-let codigoAscci = textoUsuario.toUpperCase().charCodeAt(i);
-let codigoAscciCipher = (codigoAscci- 65 + offset) %26 + 65;
-let caracterCipher = String.fromCharCode(codigoAscciCipher);
-
-textoCifrado = textoCifrado + caracterCipher; 
+textoCifrado = textoCifrado+caracterCipher; 
 
 }
-return textoCifrado
+return textoCifrado;
+
 //funcion concatena los caracteres cifrados y forma el nuevo mensaje
-  },
 
-  decode: (textoUsuario , offsetUsuario) => {
-    let textoCifrado= "";
-    let offset = 0;
 
-    for ( i = 0; i < textoUsuario.length; i++) {
-      let codigoAscci= textoUsuario.charCodeAt(i);
-      let codigoAscciDecipher = (codigoAscci + 65 - offset) % 26 + 65;
-      let caracterDecipher = String.fromCharCode (codigoAscciDecipher);
-      textoCifrado = textoCifrado + caracterDecipher;
+
+}
+function decode() {
+
+    for (i = 0; i < textoUsuario.length; i++){
+    let mensaje = textoUsuario.toUpperCase().charCodeAt(i);
+    let codigoCesarCipher = (mensaje+65 - offset) %26 - 65;
+    let caracterCipher = String.fromCharCode(codigoAscciCipher);
+    
+    textoCifrado = textoCifrado + caracterCipher; 
+    
     }
     return textoCifrado
-  }
-}
-
-
-
-
-
-
- 
+    //funcion concatena los caracteres cifrados y forma el nuevo mensaje
+    
+    
+    
+    }

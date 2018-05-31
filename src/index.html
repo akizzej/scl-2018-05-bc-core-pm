@@ -11,8 +11,8 @@
 </head>
 <!-- angustiadaaaaaaa -->
 <body>
-    <script src="cipher.js"></script>
-<script src="app.js"></script>
+
+
 
 
   <div>
@@ -24,10 +24,10 @@
     <label>Ingresa tu Mensaje</label><br>
 
       <textarea  id= "text" placeholder="Introduce aquí el texto a descifrar"></textarea><br>
-      <input id = "OffSet" type="number"  min="0" max="100" value="0">
+      <input id= "OffSet" type="number"  min="0" max="100" value="0">
       <label>Desplazamiento</label>
-      <input id="cipher-button" class="button" type="submit" onclick= textoCifrado value= "cipher">
-      <input id="decipher-button" class="button" type="submit" onclick= "cipher" value="Dechiper"><br>
+      <input id="cipher-button" class="button" type="submit" onclick= "encode()" value= "cipher">
+      <input id="decipher-button" class="button" type="submit" onclick="desencriptar()" value="Dechiper"><br>
       <label>Tu mensaje dice:</label><br>
 		  <textarea id="textoCifrado" readonly></textarea>
 		  </div>

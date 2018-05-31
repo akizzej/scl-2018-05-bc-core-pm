@@ -1,17 +1,26 @@
-//se declara una variable "textoUsuario" para guardar el texto que ingrese el usuario
+
+
+
+
+window.onload = function(){
 let textoUsuario = "";
 let offset = 0;
-let cifrado ="";
+
 
 //se hace un for para recorrer el texto ingresado x el user
-function cipher (){
-for (i = 0; i < textoUsuario.length; i++)
+function cipher() {
+
+for (i = 0; i < textoUsuario.length; i++){
 let codigoAscci = textoUsuario.toUpperCase().charCodeAt(i);
 let codigoAscciCipher = (codigoAscci- 65 + offset) %26 + 65;
 let caracterCipher = String.fromCharCode(codigoAscciCipher);
 
-cifrado = cifrado+ caracterCipher; 
+textoCifrado = textoCifrado + caracterCipher; 
 
 }
+return textoCifrado
 //funcion concatena los caracteres cifrados y forma el nuevo mensaje
-return cifrado
+}
+ 
+
+}

@@ -1,0 +1,66 @@
+body { background-image: url("img/fondo.png") }
+/* fonde de pagina*/
+
+#rigth {
+    text-align: center;
+
+};
+¡
+
+#Buttons {
+    position: absolute;
+    display:inline-block
+    
+}
+/* */
+textarea {
+    width: 400px;
+    height: 100px;
+    margin: 10px 0 10px 0;
+    box-shadow: 6px 6px 0px black;
+    
+    
+}
+h2 {   
+    font-size:4.7em;font-weight: normal;
+    text-align: center;
+    color:#DF0101;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 5px 5px 5px #1C1C1C;
+ 
+}
+
+ h3 {
+    text-align: center;
+}
+div {
+    padding: 20px;
+}
+input {
+    padding: 4px;
+    margin: 10px 0 10px 0;
+}
+#chains {
+    width: 400px;
+    height: 100px;
+    margin: 10px 0 10px 0;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+        body {
+        background-color: rgb(136, 49, 129);
+    
+        }
+        h2 {   
+            font-size:3.7em;font-weight: normal;
+            text-align: center;
+            color:rgb(67, 28, 175);
+            font-family: 'Luckiest Guy', cursive;
+            text-shadow: 5px 5px 5px #1C1C1C;
+         
+        }
+        #Buttons {
+            position: absolute;
+            display:inline-block
+        
+}

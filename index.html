@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
   <style>
@@ -26,10 +27,11 @@
       <textarea  id= "text" placeholder="Introduce aquí el texto a descifrar"></textarea><br>
       <input id= "OffSet" type="number"  min="0" max="100" value="0">
       <label>Desplazamiento</label>
-      <input id="cipher-button" class="button" type="submit" onclick= "cifrar()" value= "cipher">
-      <input id="decipher-button" class="button" type="submit" onclick="desencriptar()" value="Dechiper"><br>
+      <input  class="button" type="submit" onclick= "cifrar()" value= "cipher">
+      <input  class="button" type="submit" onclick= "descifrar()" value="Dechiper"><br>
       <label>Tu mensaje dice:</label><br>
-		  <textarea id="textoCifrado" readonly></textarea>
+      <textarea id="textoCifrado" readonly></textarea>
+      
 		  </div>
 		
     </div>
